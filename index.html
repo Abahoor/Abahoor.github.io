@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Abahoor Lion is a data analyst and computer science student who cleans, validates, queries, and visualizes complex data for decision-ready insights.">
+    <meta name="theme-color" content="#07100d">
+    <meta property="og:title" content="Abahoor Lion | Data Analyst Portfolio">
+    <meta property="og:description" content="Data analysis projects spanning Python, SQL, MySQL, Power BI, ETL, and data visualization.">
+    <meta property="og:type" content="website">
+    <title>Abahoor Lion | Data Analyst Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2307100d'/%3E%3Cpath d='M18 19l13 13-13 13M34 45h13' fill='none' stroke='%235ee6a8' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+        <div class="container header-inner">
+            <a class="logo" href="#top" aria-label="Abahoor Lion, home">
+                <span aria-hidden="true">AL</span><span class="logo-prompt" aria-hidden="true">_</span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+                <a class="nav-contact" href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="container hero-grid">
+                <div class="hero-copy" data-reveal>
+                    <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Open to data analyst internships and entry-level roles</p>
+                    <h1 id="hero-title">
+                        <span>Abahoor Lion</span>
+                        Data Analyst
+                    </h1>
+                    <p class="hero-lead">I turn raw, messy datasets into clear, decision-ready insights through careful cleaning, SQL analysis, and focused visual storytelling.</p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">View My Projects</a>
+                        <a class="button button-secondary" href="assets/Abahoor_Lion_Resume.pdf" download>Download Resume</a>
+                    </div>
+
+                    <div class="hero-links" aria-label="Professional profiles">
+                        <a href="https://github.com/Abahoor" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                        <a href="https://www.linkedin.com/in/abahoor-lion/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                    </div>
+
+                    <dl class="hero-metrics" aria-label="Selected project scale">
+                        <div>
+                            <dt>375</dt>
+                            <dd>housing markets</dd>
+                        </div>
+                        <div>
+                            <dt>51,939</dt>
+                            <dd>salary records</dd>
+                        </div>
+                        <div>
+                            <dt>40,044</dt>
+                            <dd>bike trips</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="terminal" data-terminal data-reveal aria-label="Interactive sample code from Abahoor Lion's projects">
+                    <div class="terminal-topbar">
+                        <span class="terminal-path">~/portfolio/sample-code</span>
+                        <span class="terminal-state">choose a project</span>
+                    </div>
+
+                    <div class="terminal-intro">
+                        <p>Sample code from my projects</p>
+                        <span>Choose a project, then switch between its SQL and Python/Pandas work.</span>
+                    </div>
+
+                    <div class="terminal-projects" role="group" aria-label="Choose a project">
+                        <button type="button" data-project="housing" aria-pressed="true">Housing Markets</button>
+                        <button type="button" data-project="salary" aria-pressed="false">Salary Intelligence</button>
+                        <button type="button" data-project="citibike" aria-pressed="false">Citi Bike</button>
+                    </div>
+
+                    <div class="terminal-tabs" role="tablist" aria-label="Analysis language">
+                        <button id="sql-tab" role="tab" aria-selected="true" aria-controls="code-panel" tabindex="0" data-language="sql">SQL</button>
+                        <button id="python-tab" role="tab" aria-selected="false" aria-controls="code-panel" tabindex="-1" data-language="python">Python / Pandas</button>
+                    </div>
+
+                    <div class="terminal-panel" id="code-panel" role="tabpanel" aria-labelledby="sql-tab" aria-live="polite">
+                        <div class="terminal-file-row">
+                            <p class="terminal-label" data-code-file>housing_market_intelligence_platform.sql</p>
+                            <span data-code-context>Housing Markets · SQL</span>
+                        </div>
+                        <pre><code data-code-output><span class="code-keyword">SELECT</span> COUNT(*) <span class="code-keyword">AS</span> markets,
+       ROUND(AVG(avg_sale_price)) <span class="code-keyword">AS</span> avg_price,
+       ROUND(AVG(avg_rent)) <span class="code-keyword">AS</span> avg_rent
+<span class="code-keyword">FROM</span> market_map_2024;</code></pre>
+                        <div class="result-block" data-result-block aria-label="Code result">
+                            <div class="result-row result-header"><span>markets</span><span>avg_price</span><span>avg_rent</span></div>
+                            <div class="result-row"><span>375</span><span>$349,983</span><span>$1,499</span></div>
+                        </div>
+                    </div>
+
+                    <p class="sr-only" data-terminal-summary>The selected sample shows a SQL market profile across 375 housing markets.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="container about-grid">
+                <div data-reveal>
+                    <p class="section-kicker">01 / About</p>
+                    <h2 id="about-title">Practical analysis, built on reliable data.</h2>
+                </div>
+                <div class="about-copy" data-reveal>
+                    <p>I am a Computer Science student at the College of Staten Island who enjoys solving practical problems with data. My work focuses on making complex datasets useful: cleaning inconsistent fields, integrating multiple sources, validating assumptions, querying the result, and building dashboards that make the findings easy to understand.</p>
+                    <p>Across academic, personal, and internship work, I have used Python, SQL, Snowflake, dbt, MySQL, and Power BI to move from raw records to analysis-ready models and clear reporting.</p>
+
+                    <ol class="workflow" aria-label="Data analysis workflow">
+                        <li><span>01</span><strong>Clean</strong><small>Resolve missing, inconsistent, and messy values.</small></li>
+                        <li><span>02</span><strong>Validate</strong><small>Check structure, coverage, joins, and assumptions.</small></li>
+                        <li><span>03</span><strong>Query</strong><small>Answer focused business questions with SQL.</small></li>
+                        <li><span>04</span><strong>Visualize</strong><small>Turn findings into clear, usable dashboards.</small></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <div>
+                        <p class="section-kicker">02 / Skills</p>
+                        <h2 id="skills-title">Tools for the full analysis workflow.</h2>
+                    </div>
+                    <p>Grouped by how I use them—from preparing source data to communicating results.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card" data-reveal>
+                        <p class="skill-index">A</p>
+                        <h3>Analysis</h3>
+                        <ul class="tag-list" aria-label="Analysis skills">
+                            <li>Python</li><li>Pandas</li><li>SQL</li><li>Excel</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card" data-reveal>
+                        <p class="skill-index">B</p>
+                        <h3>Databases &amp; BI</h3>
+                        <ul class="tag-list" aria-label="Database and business intelligence skills">
+                            <li>MySQL</li><li>Snowflake</li><li>Power BI</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card" data-reveal>
+                        <p class="skill-index">C</p>
+                        <h3>Data workflows</h3>
+                        <ul class="tag-list" aria-label="Data workflow skills">
+                            <li>ETL</li><li>APIs</li><li>JSON</li><li>dbt</li><li>Validation</li><li>Integration</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card" data-reveal>
+                        <p class="skill-index">D</p>
+                        <h3>Tools</h3>
+                        <ul class="tag-list" aria-label="Development tools">
+                            <li>Git</li><li>GitHub</li><li>VS Code</li><li>Visual Studio</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <div>
+                        <p class="section-kicker">03 / Featured work</p>
+                        <h2 id="projects-title">Data projects with a clear question and a complete path to insight.</h2>
+                    </div>
+                    <p>Each project combines data preparation, analysis, and communication—not just a finished chart.</p>
+                </div>
+
+                <div class="projects-list">
+                    <article class="project-card project-card-featured" data-reveal>
+                        <div class="project-visual">
+                            <img src="images/projects/housing-market-overview.png" width="1307" height="717" alt="Power BI overview showing average price, rent, income, mortgage rate, supply, and activity across 375 U.S. housing markets" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta"><span>Flagship project</span><span>2024 market analysis</span></div>
+                            <h3>Housing Market Intelligence Platform</h3>
+                            <p class="project-summary">Integrated housing prices, rents, income, mortgage rates, and market activity into one standardized model for comparing affordability and supply across U.S. metropolitan areas.</p>
+                            <ul class="project-points">
+                                <li>Standardized mismatched Census, Redfin, and Zillow geographies with a reusable bridge.</li>
+                                <li>Built Python ETL pipelines, validation checks, a MySQL model, and analytical SQL views.</li>
+                                <li>Delivered a seven-page Power BI dashboard covering 375 complete markets.</li>
+                            </ul>
+                            <ul class="tag-list tag-list-compact" aria-label="Housing project technologies">
+                                <li>Python</li><li>Pandas</li><li>APIs</li><li>MySQL</li><li>Power BI</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a class="text-link" href="https://github.com/Abahoor/Housing-Market-Intelligence-Platform" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal>
+                        <div class="project-visual">
+                            <img src="images/projects/salary-overview.png" width="1307" height="737" alt="Power BI dashboard summarizing salary trends, experience levels, and job categories across 51,939 data-career records" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta"><span>Data integration</span><span>51,939 records</span></div>
+                            <h3>Data Salary Intelligence Analysis</h3>
+                            <p class="project-summary">Combined three differently structured salary datasets into a consistent analytical model for studying compensation across roles, experience levels, locations, and work settings.</p>
+                            <ul class="project-points">
+                                <li>Cleaned salary ranges, missing values, categories, locations, and work-setting fields in Pandas.</li>
+                                <li>Created ten MySQL views for repeatable business analysis and Power BI reporting.</li>
+                                <li>Documented both findings and limitations, including unequal samples by year and work setting.</li>
+                            </ul>
+                            <ul class="tag-list tag-list-compact" aria-label="Salary project technologies">
+                                <li>Python</li><li>Pandas</li><li>MySQL</li><li>Power BI</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a class="text-link" href="https://github.com/Abahoor/Data-Salary-Intelligence-Analysis" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal>
+                        <div class="project-visual project-visual-data" role="img" aria-label="Citi Bike analysis highlights: 40,044 trips, 68.7 percent electric bikes, and a 5 PM peak hour">
+                            <div class="data-visual-heading"><span>JC-202601</span><span>ride summary</span></div>
+                            <div class="data-stat"><strong>40,044</strong><span>cleaned trips</span></div>
+                            <div class="data-bars" aria-hidden="true">
+                                <span style="--bar: 68.7%"><i>electric</i><b>68.7%</b></span>
+                                <span style="--bar: 31.3%"><i>classic</i><b>31.3%</b></span>
+                            </div>
+                            <div class="data-foot"><span>Peak hour</span><strong>5:00 PM</strong></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta"><span>Mobility analysis</span><span>January 2026</span></div>
+                            <h3>Citi Bike Analysis</h3>
+                            <p class="project-summary">Prepared Jersey City trip data for SQL and dashboard analysis to identify usage patterns, peak demand, popular stations, and differences between member and casual riders.</p>
+                            <ul class="project-points">
+                                <li>Engineered ride duration, hour, day, and weekend fields with Python and Pandas.</li>
+                                <li>Structured the cleaned data for MySQL queries, reusable views, and Power BI reporting.</li>
+                                <li>Found that electric bikes represented 68.7% of rides and activity peaked at 5 PM.</li>
+                            </ul>
+                            <ul class="tag-list tag-list-compact" aria-label="Citi Bike project technologies">
+                                <li>Python</li><li>Pandas</li><li>MySQL</li><li>Power BI</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a class="text-link" href="https://github.com/Abahoor/nyc-citibike-data-analysis" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section resume-section" id="resume" aria-labelledby="resume-title">
+            <div class="container resume-panel" data-reveal>
+                <div>
+                    <p class="section-kicker">04 / Resume</p>
+                    <h2 id="resume-title">The concise version, ready to review.</h2>
+                    <p>Download my résumé for experience, education, certifications, and a focused view of my technical background.</p>
+                </div>
+                <div class="resume-actions">
+                    <a class="button button-primary" href="assets/Abahoor_Lion_Resume.pdf" download>Download Resume</a>
+                    <a class="text-link" href="mailto:abahoorlion@gmail.com">Email Me <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="container contact-grid">
+                <div data-reveal>
+                    <p class="section-kicker">05 / Contact</p>
+                    <h2 id="contact-title">Let’s connect.</h2>
+                    <p>I am interested in internships and entry-level data analyst opportunities where careful analysis and clear communication matter.</p>
+                </div>
+                <div class="contact-links" data-reveal>
+                    <a href="mailto:abahoorlion@gmail.com"><span>Email</span><strong>abahoorlion@gmail.com</strong><i aria-hidden="true">↗</i></a>
+                    <a href="https://www.linkedin.com/in/abahoor-lion/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>abahoor-lion</strong><i aria-hidden="true">↗</i></a>
+                    <a href="https://github.com/Abahoor" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>Abahoor</strong><i aria-hidden="true">↗</i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span data-year>2026</span> Abahoor Lion</p>
+            <p>Data analyzed. Assumptions checked. Findings made clear.</p>
+        </div>
+    </footer>
+</body>
+</html>
